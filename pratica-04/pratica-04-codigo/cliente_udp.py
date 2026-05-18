@@ -14,4 +14,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as cliente:
             dados, endereco = cliente.recvfrom(1024)
             print(f"Resposta de {endereco}: {dados.decode('utf-8')}")
         except socket.timeout:
-        print("Tempo esgotado: nenhuma resposta recebida.")
+            print("Tempo esgotado: nenhuma resposta recebida.") 
